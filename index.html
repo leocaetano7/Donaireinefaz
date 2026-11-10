@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dona Irene Faz · Cardápio</title>
+  <meta name="description" content="Comida de verdade! Quiches, marmitas, saladas, bolos e doces feitos pela Dona Irene. Delivery todos os dias no almoço em Natal/RN.">
+  <meta name="theme-color" content="#fff8ee">
+  <meta property="og:title" content="Dona Irene Faz · Cardápio">
+  <meta property="og:description" content="Comida de verdade! Delivery todos os dias no almoço em Natal/RN. Faça seu pedido pelo site.">
+  <meta property="og:type" content="website">
+  <!-- Depois de publicar, troque pelo endereço completo, ex.: https://donairenefaz.netlify.app/img/mesa-quiches.jpg -->
+  <meta property="og:image" content="img/mesa-quiches.jpg">
+  <link rel="icon" href="img/icone.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-panela" viewBox="0 0 48 48">
+      <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="24" cy="9" r="1.8"/>
+        <path d="M11 19c0-4.4 5.8-8 13-8s13 3.6 13 8"/>
+        <path d="M9 19h30"/>
+        <path d="M12 19v12a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V19"/>
+        <path d="M12 23.5H7.5M36 23.5h4.5"/>
+      </g>
+      <path d="M16 42h16" stroke="#e0483a" stroke-width="2.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-sacola" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/>
+        <path d="M9 10V7a3 3 0 0 1 6 0v3"/>
+      </g>
+    </symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4l-4.5 1.1z"/>
+        <path d="M9 8.6c0 3.5 2.9 6.4 6.4 6.4l1.1-1.6-2-1-1 .9a4.6 4.6 0 0 1-2.8-2.8l.9-1-1-2L9 8.6z" fill="currentColor" stroke-width="1"/>
+      </g>
+    </symbol>
+    <symbol id="i-calendario" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/>
+        <path d="M3.5 10h17M8 3v4M16 3v4"/>
+      </g>
+    </symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/>
+      </g>
+    </symbol>
+    <symbol id="i-fechar" viewBox="0 0 24 24">
+      <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-lixo" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <header class="topo">
+    <div class="topo-inner">
+      <a class="marca" href="#inicio" aria-label="Dona Irene Faz — início">
+        <svg class="marca-icone" aria-hidden="true"><use href="#i-panela"/></svg>
+        <span class="marca-nome">Dona Irene <em>faz</em></span>
+      </a>
+      <button class="btn-sacola" type="button" data-abrir-sacola aria-label="Abrir sacola">
+        <svg aria-hidden="true"><use href="#i-sacola"/></svg>
+        <span class="btn-sacola-texto">Sacola</span>
+        <span class="contador" data-contador hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-texto">
+          <p class="sobretitulo">Natal/RN · Feito em casa</p>
+          <h1>Comida de <em>verdade</em>, do jeitinho de casa.</h1>
+          <p class="hero-sub">Quiches, marmitas, saladas, bolos e doces feitos pela Dona Irene. Escolha aqui, envie o pedido pelo WhatsApp e receba em casa.</p>
+          <p class="entrega">
+            <svg aria-hidden="true"><use href="#i-calendario"/></svg>
+            <span><strong>Delivery todos os dias</strong> no almoço</span>
+          </p>
+          <div class="hero-acoes">
+            <a class="btn btn-primario" href="#cardapio">Ver cardápio</a>
+            <a class="btn btn-contorno" data-link-whats href="#" target="_blank" rel="noopener">
+              <svg aria-hidden="true"><use href="#i-whats"/></svg> Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="mosaico" aria-hidden="true">
+          <img src="img/naked-cake-topo.jpg" alt="" fetchpriority="high">
+          <img src="img/quiche-carne-de-sol.jpg" alt="">
+          <img src="img/salada-manga.jpg" alt="">
+          <div class="carimbo"><span>Delivery</span><strong>todo dia</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="passos" aria-label="Como funciona">
+      <ol>
+        <li><span class="passo-num">1</span><div><strong>Escolha seus pratos</strong><p>Adicione o que quiser na sacola.</p></div></li>
+        <li><span class="passo-num">2</span><div><strong>Envie pelo WhatsApp</strong><p>O pedido chega prontinho para a Dona Irene confirmar.</p></div></li>
+        <li><span class="passo-num">3</span><div><strong>Receba em casa</strong><p>Delivery todos os dias no almoço, ou retire se preferir.</p></div></li>
+      </ol>
+    </section>
+
+    <nav class="categorias" id="cardapio" aria-label="Categorias do cardápio">
+      <div class="chips" data-chips></div>
+    </nav>
+
+    <div class="lista" data-lista></div>
+
+    <section class="encomendas">
+      <div class="encomendas-inner">
+        <div class="encomendas-fotos" aria-hidden="true">
+          <img src="img/mesa-quiches.jpg" alt="" loading="lazy">
+          <img src="img/mesa-festa.jpg" alt="" loading="lazy">
+        </div>
+        <div class="encomendas-texto">
+          <p class="sobretitulo">Encomendas</p>
+          <h2>Festas, eventos e cafés da manhã</h2>
+          <p>Mesa de quiches, bolo de aniversário, cento de salgadinhos, docinhos… Conte o que você precisa e a Dona Irene monta tudo com o mesmo carinho.</p>
+          <a class="btn btn-whats" data-link-whats="encomenda" href="#" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-whats"/></svg> Pedir orçamento
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-inner">
+      <div class="rodape-marca">
+        <svg aria-hidden="true"><use href="#i-panela"/></svg>
+        <div>
+          <strong>Dona Irene <em>faz</em></strong>
+          <span>Comida de verdade! · Delivery todos os dias no almoço · Natal/RN</span>
+        </div>
+      </div>
+      <ul class="rodape-links">
+        <li><a data-link-insta href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-insta"/></svg> <span data-insta-texto>@donairenefaz</span></a></li>
+        <li><a data-link-whats href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg> <span data-telefone>WhatsApp</span></a></li>
+      </ul>
+      <p class="rodape-copy">© <span data-ano>2026</span> Dona Irene Faz</p>
+    </div>
+  </footer>
+
+  <!-- Barra fixa da sacola (aparece quando há itens) -->
+  <button class="barra-sacola" type="button" data-abrir-sacola data-barra hidden>
+    <span class="barra-qtd" data-barra-qtd>0</span>
+    <span class="barra-rotulo">Ver sacola</span>
+    <span class="barra-total" data-barra-total></span>
+  </button>
+
+  <!-- Detalhe do produto -->
+  <dialog class="sheet" id="dlg-produto" aria-labelledby="pd-nome">
+    <form class="sheet-corpo" id="form-produto">
+      <div class="sheet-rolagem">
+        <div class="pd-foto">
+          <img id="pd-foto" alt="">
+          <button class="fechar fechar-flutuante" type="button" data-fechar aria-label="Fechar"><svg aria-hidden="true"><use href="#i-fechar"/></svg></button>
+        </div>
+        <div class="pd-conteudo">
+          <h2 id="pd-nome"></h2>
+          <p id="pd-desc"></p>
+          <p class="pd-preco" id="pd-preco"></p>
+          <fieldset class="opcoes" id="pd-variacoes" hidden>
+            <legend>Escolha uma opção</legend>
+            <div class="opcoes-lista" id="pd-variacoes-lista"></div>
+          </fieldset>
+          <label class="campo" id="pd-obs-campo">
+            <span>Alguma observação? <small>(opcional)</small></span>
+            <textarea id="pd-obs" rows="2" maxlength="200" placeholder="Ex.: sem cebola, escrever “Parabéns, Ana” no bolo…"></textarea>
+          </label>
+          <p class="pd-aviso" id="pd-aviso" hidden></p>
+        </div>
+      </div>
+      <div class="sheet-rodape" id="pd-rodape">
+        <div class="qtd" role="group" aria-label="Quantidade">
+          <button type="button" data-pd-qtd="-1" aria-label="Diminuir">−</button>
+          <output id="pd-qtd" aria-live="polite">1</output>
+          <button type="button" data-pd-qtd="1" aria-label="Aumentar">+</button>
+        </div>
+        <button class="btn btn-primario btn-largo" type="submit" id="pd-add">Adicionar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Sacola / finalizar pedido -->
+  <dialog class="sheet" id="dlg-sacola" aria-labelledby="sc-titulo">
+    <div class="sheet-corpo">
+      <header class="sheet-topo">
+        <h2 id="sc-titulo">Sua sacola</h2>
+        <button class="fechar" type="button" data-fechar aria-label="Fechar"><svg aria-hidden="true"><use href="#i-fechar"/></svg></button>
+      </header>
+
+      <div class="sheet-rolagem">
+        <div class="sc-vazia" id="sc-vazia">
+          <svg aria-hidden="true"><use href="#i-panela"/></svg>
+          <p><strong>Sua sacola está vazia.</strong><br>Que tal começar por uma quiche?</p>
+          <button class="btn btn-contorno" type="button" data-fechar>Ver cardápio</button>
+        </div>
+
+        <div id="sc-cheia">
+          <ul class="sc-itens" id="sc-itens"></ul>
+          <button class="link-mais" type="button" data-fechar>+ Adicionar mais itens</button>
+
+          <form id="form-pedido" class="form-pedido" novalidate>
+            <h3>Para quem é o pedido?</h3>
+            <label class="campo">
+              <span>Seu nome</span>
+              <input name="nome" autocomplete="name" required maxlength="80">
+            </label>
+            <label class="campo">
+              <span>Para quando?</span>
+              <input name="data" type="date" required>
+            </label>
+
+            <fieldset class="opcoes" id="sc-recebimento">
+              <legend>Como prefere receber?</legend>
+              <div class="opcoes-lista opcoes-lado">
+                <label class="opcao"><input type="radio" name="recebimento" value="entrega" checked><span>Delivery</span></label>
+                <label class="opcao"><input type="radio" name="recebimento" value="retirada"><span>Vou retirar</span></label>
+              </div>
+            </fieldset>
+
+            <div id="sc-endereco">
+              <label class="campo">
+                <span>Endereço</span>
+                <input name="endereco" autocomplete="street-address" placeholder="Rua, número e complemento" maxlength="140">
+              </label>
+              <label class="campo">
+                <span>Bairro</span>
+                <input name="bairro" autocomplete="address-level3" maxlength="60">
+              </label>
+            </div>
+
+            <fieldset class="opcoes">
+              <legend>Forma de pagamento</legend>
+              <div class="opcoes-lista opcoes-lado" id="sc-pagamentos"></div>
+            </fieldset>
+
+            <label class="campo" id="sc-troco" hidden>
+              <span>Troco para quanto? <small>(opcional)</small></span>
+              <input name="troco" inputmode="decimal" placeholder="Ex.: 100" maxlength="12">
+            </label>
+
+            <label class="campo">
+              <span>Observações <small>(opcional)</small></span>
+              <textarea name="obs" rows="2" maxlength="300" placeholder="Ponto de referência, horário, alergias…"></textarea>
+            </label>
+          </form>
+
+          <dl class="totais" id="sc-totais"></dl>
+        </div>
+
+        <div class="sc-enviado" id="sc-enviado" hidden>
+          <svg aria-hidden="true"><use href="#i-whats"/></svg>
+          <p><strong>Seu pedido foi aberto no WhatsApp.</strong><br>É só tocar em <em>enviar</em> por lá. A Dona Irene confirma valores e horário com você.</p>
+          <button class="btn btn-primario" type="button" id="sc-limpar">Limpar sacola</button>
+          <button class="link-mais" type="button" id="sc-voltar">Voltar ao pedido</button>
+        </div>
+      </div>
+
+      <div class="sheet-rodape" id="sc-rodape">
+        <p class="erro" id="sc-erro" role="alert"></p>
+        <button class="btn btn-whats btn-largo" type="submit" form="form-pedido">
+          <svg aria-hidden="true"><use href="#i-whats"/></svg> Enviar pedido pelo WhatsApp
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="cardapio.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
